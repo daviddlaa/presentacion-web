@@ -1,0 +1,128 @@
+{
+  "hero": {
+    "titulo": "Tu Libertad Financiera Comienza HOY",
+    "subtitulo": "Gana dinero real mientras construyes tu equipo. Sin inversión inicial. Sin experiencia necesaria.",
+    "boton": "yo quiero "
+  },
+  "como_funciona": {
+    "titulo": "¿Cómo lo hacemos realidad?",
+    "descripcion": "Conectamos clientes con líneas de crédito y generamos ingresos a través de un sistema multinivel híbrido."
+  },
+  "emocion": {
+    "titulo": "¿Cuál es tu sueño?",
+    "descripcion": "Tener tu casa propia, un negocio, libertad financiera… todo empieza con una decisión.",
+    "casa": "Tu casa propia",
+    "negocio": "Tu propio negocio",
+    "libertad": "Libertad financiera",
+    "familia": "Tiempo con tu familia"
+  },
+  "testimonios": [
+    {
+      "nombre": "Juan Garcés",
+      "texto": "Logré salir de deudas y mejorar la vida de mi familia."
+    },
+    {
+      "nombre": "Oswaldo Chalén",
+      "texto": "Ahora tengo estabilidad económica y crecimiento profesional."
+    }
+  ],
+  "beneficios": [
+    "Manejo de tu tiempo",
+    "Ingresos constantes",
+    "Crecimiento personal",
+    "Construcción de equipo"
+  ],
+  "ganancias": {
+    "titulo": "Ejemplo de ganancias",
+    "detalle": "Comisión 3% + bono por cumplimiento",
+    "total": "$150",
+    "subtexto": "Ingresos potenciales (sin techo)",
+    "adicional": "Nuestros afiliados ganan de $700 a $900+ dólares mensuales en promedio",
+    "frase": "No es suerte… es un sistema.",
+    "imagen": "WhatsApp_Image_2026-03-29_at_10.37.50_AM.jpeg",
+    "productos": [
+      {
+        "nombre": "Moto",
+        "precio": 4000,
+        "comision": 120,
+        "porcentaje": 3
+      },
+      {
+        "nombre": "Refrigerador Side by Side",
+        "precio": 3000,
+        "comision": 90,
+        "porcentaje": 3
+      },
+      {
+        "nombre": "TV Smart 55\"",
+        "precio": 1500,
+        "comision": 45,
+        "porcentaje": 3
+      },
+      {
+        "nombre": "Lavadora Automática",
+        "precio": 2500,
+        "comision": 75,
+        "porcentaje": 3
+      },
+      {
+        "nombre": "Aire Acondicionado 3T",
+        "precio": 3500,
+        "comision": 105,
+        "porcentaje": 3
+      },
+      {
+        "nombre": "Paquete Cocina Integral",
+        "precio": 2000,
+        "comision": 60,
+        "porcentaje": 3
+      },
+      {
+        "nombre": "Combo Premium (Todo incluido)",
+        "precio": 10000,
+        "comision": 300,
+        "porcentaje": 3
+      }
+    ],
+    "bonos": [
+      {
+        "titulo": "Bono por Cumplimiento",
+        "descripcion": "Gana bonificación extra mensual al alcanzar tus metas de ventas. Cuanto vendas, más bonos desbloqueas."
+      },
+      {
+        "titulo": "Bono por Equipo",
+        "descripcion": "Ingresos adicionales por las ganancias de tu red de afiliados. Crecen contigo mientras creces."
+      },
+      {
+        "titulo": "Comisión Directa",
+        "descripcion": "3% de comisión en cada venta. Sin techo de ingresos. Mientras más vendes, más ganas."
+      }
+    ],
+    "escalas_bonos": [
+      {
+        "ventas": 4000,
+        "bono": 90
+      },
+      {
+        "ventas": 7000,
+        "bono": 120
+      },
+      {
+        "ventas": 12000,
+        "bono": 200
+      },
+      {
+        "ventas": 18000,
+        "bono": 300
+      },
+      {
+        "ventas": 25000,
+        "bono": 400
+      },
+      {
+        "ventas": 30000,
+        "bono": 500
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<section class="min-h-screen flex flex-col justify-center items-center text-white text-center px-6 bg-transparent">
+
+    <!-- Título -->
+    <h2 data-aos="fade-up" class="text-5xl md:text-6xl font-bold mb-10">
+        Historias reales
+    </h2>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl w-full px-2">
+
+        {% for t in contenido.testimonios %}
+        <div data-aos="flip-left"
+             class="bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+
+            <p class="mb-4 italic opacity-90 text-xl">
+                "{{ t.texto }}"
+            </p>
+
+            <h3 class="font-bold text-purple-300 text-lg">
+                {{ t.nombre }}
+            </h3>
+
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <!-- Mensaje final -->
+    <div data-aos="fade-up" class="mt-10">
+        <p class="text-2xl opacity-90 font-semibold">
+            Tú puedes ser el próximo en contar tu historia.
+        </p>
+    </div>
+
+</section>

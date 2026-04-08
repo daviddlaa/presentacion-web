@@ -1,0 +1,57 @@
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-transparent text-white">
+
+    <!-- Título -->
+    <h2 data-aos="fade-up" class="text-5xl md:text-6xl font-bold mb-4">
+        {{ contenido.emocion.titulo }}
+    </h2>
+
+    <p data-aos="fade-up" data-aos-delay="200" class="text-2xl mb-10 opacity-80 max-w-2xl font-semibold">
+        {{ contenido.emocion.descripcion }}
+    </p>
+
+    <!-- Grid de sueños -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl w-full px-2">
+
+        <!-- CASA -->
+        <div data-aos="zoom-in" class="relative group rounded-xl overflow-hidden">
+            <img src="{{ url_for('static', filename='img/casa.jpg') }}"
+                 class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                <h3 class="text-xl font-bold">{{ contenido.emocion.casa }}</h3>
+            </div>
+        </div>
+
+        <!-- NEGOCIO -->
+        <div data-aos="zoom-in" data-aos-delay="100" class="relative group rounded-xl overflow-hidden">
+            <img src="{{ url_for('static', filename='img/negocio.jpg') }}"
+                 class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                <h3 class="text-xl font-bold">{{ contenido.emocion.negocio }}</h3>
+            </div>
+        </div>
+
+        <!-- LIBERTAD -->
+        <div data-aos="zoom-in" data-aos-delay="200" class="relative group rounded-xl overflow-hidden">
+            <img src="{{ url_for('static', filename='img/libertad.jpg') }}"
+                 class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                <h3 class="text-xl font-bold">{{ contenido.emocion.libertad }}</h3>
+            </div>
+        </div>
+
+        <!-- FAMILIA -->
+        <div data-aos="zoom-in" data-aos-delay="300" class="relative group rounded-xl overflow-hidden">
+            <img src="{{ url_for('static', filename='img/familia.jpg') }}"
+                 class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                <h3 class="text-xl font-bold">{{ contenido.emocion.familia }}</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,26 @@
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-transparent text-white relative">
+
+    <!-- 🔐 BOTÓN ADMIN (esquina superior) -->
+    <a href="/admin"
+       class="absolute top-6 right-6 text-sm bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg hover:bg-white/20 transition">
+        ⚙️ Admin
+    </a>
+
+    <!-- Título -->
+    <h1 data-aos="fade-up" class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 max-w-3xl px-2">
+        {{ contenido.hero.titulo }}
+    </h1>
+
+    <!-- Subtítulo -->
+    <p data-aos="fade-up" data-aos-delay="200" class="text-xl sm:text-2xl md:text-3xl mb-6 opacity-90 max-w-2xl font-semibold px-2">
+        {{ contenido.hero.subtitulo }}
+    </p>
+
+    <!-- Botón principal -->
+    <a data-aos="fade-up" data-aos-delay="400"
+       href="#contacto"
+       class="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-2xl font-bold hover:scale-105 transition duration-300 shadow-lg">
+        {{ contenido.hero.boton }}
+    </a>
+
+</section>

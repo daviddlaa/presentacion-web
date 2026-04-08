@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportunidad de Negocio</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* 🔴 → 🔵 Degradado vertical elegante */
+    .bg-main {
+        background: linear-gradient(
+            to bottom,
+            #7f1d1d 0%,     /* rojo oscuro elegante */
+            #b91c1c 25%,    /* rojo medio */
+            #7c3aed 55%,    /* transición púrpura */
+            #2563eb 80%,    /* azul medio */
+            #1e3a8a 100%    /* azul profundo */
+        );
+    }
+</style>
+
+</head>
+
+<body class="text-white relative overflow-x-hidden bg-main">
+
+    <!-- 💜 Luz lila -->
+    <div class="fixed inset-0 -z-10 opacity-30 blur-3xl"
+        style="background: radial-gradient(circle at 20% 30%, #a78bfa, transparent 60%);">
+    </div>
+
+    <!-- 🔵 Luz azul -->
+    <div class="fixed inset-0 -z-10 opacity-20 blur-3xl"
+        style="background: radial-gradient(circle at 80% 70%, #60a5fa, transparent 60%);">
+    </div>
+
+    <!-- 🌫️ Luz suave extra -->
+    <div class="fixed inset-0 -z-10 opacity-10 blur-3xl"
+        style="background: radial-gradient(circle at 50% 90%, #c4b5fd, transparent 60%);">
+    </div>
+
+    <!-- CONTENIDO -->
+    {% block content %}{% endblock %}
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+</html>
