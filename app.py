@@ -20,10 +20,22 @@ ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'Multinova202')
 UPLOAD_FOLDER = 'static/img'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# 📂 Cargar contenido
+# 📂 Cargar contenido (con fallback)
 def cargar_contenido():
-    with open('data/contenido.json', 'r', encoding='utf-8') as f:
-        return json.load(f)
+    try:
+        with open('data/contenido.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        default_content = {
+            "hero": {"titulo": "¡App Lista!", "subtitulo": "Sistema funcionando. Edita en /admin", "boton": "Configurar"},
+            "como_funciona": {"titulo": "Sistema Activo", "descripcion": "Flask + Render OK"},
+            "ganancias": {"titulo": "Ganancias", "productos": [], "bonos": []},
+            "emocion": {"titulo": "Personaliza", "descripcion": ""},
+            "beneficios": [],
+            "testimonios": []
+        }
+        guardar_contenido(default_content)
+        return default_content
 
 # 💾 Guardar contenido
 def guardar_contenido(contenido):

@@ -1,0 +1,22 @@
+# Render ignore file
+# https://render.com/docs/renderignore-file
+
+# Bytecode compiled and pyc files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python environments
+.env
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
