@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: presentacion-web
+    env: python
+    plan: free
+    rootDir: presentacion_web
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: ADMIN_PASSWORD
+        value: Multinova202
+      - key: FLASK_ENV
+        value: production
