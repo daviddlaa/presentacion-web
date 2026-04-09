@@ -3,8 +3,12 @@ services:
     name: presentacion-web
     runtime: python
     plan: free
-    buildCommand: mkdir -p data static/img && pip install -r requirements.txt
-    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app
+    buildCommand: |
+      mkdir -p data static/img
+      pip install pip --upgrade --no-cache-dir
+      pip install -r requirements.txt --no-cache-dir
+    startCommand: |
+      gunicorn --bind 0.0.0.0:$PORT --timeout 120 --preload app:app
     envVars:
       - key: ADMIN_PASSWORD
         value: Multinova202
