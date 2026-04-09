@@ -16,9 +16,11 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', secrets.token_hex(32))
 ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'Multinova202')
 
-# 📁 Configuración de subida
 UPLOAD_FOLDER = 'static/img'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+os.makedirs('data', exist_ok=True)
 
 # 📂 Cargar contenido (con fallback)
 def cargar_contenido():
